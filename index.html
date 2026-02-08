@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Atwood's Diner</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="index.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <h1>Atwood's Diner</h1>
+            <p>The best burgers and pizzas in Box Elder, SD.</p>
+        </header>
+        <main class="main">
+            <section class="menu"></section>
+            <section class="order"></section>
+            <section class="modal hide">
+                <form action="" class="form-input">
+                    <h2>Enter card details</h2>
+                    <input type="text" id="full-name" placeholder="Enter your full name" name="full-name" autocomplete="cc-name" required>
+                    <label for="full-name"></label>
+                    <input type="text" id="card-number" placeholder="Enter card number" name="card-number" inputmode="numeric" autocomplete="cc-number" maxlength="19" required>
+                    <label for="card-number"></label>
+                    <input type="number" id="cvv" placeholder="Enter CVV" name="cvv"  inputmode="numeric" autocomplete="cc-csc" maxlength="4" required>
+                    <label for="cvv"></label>
+                    <button class="pay-btn" type="submit">Pay</button>
+                    <button class="close-btn" type="button" aria-label="Close modal">X</button>
+                </form>
+            </section>
+            <section class="message hide"></section>
+        </main>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
