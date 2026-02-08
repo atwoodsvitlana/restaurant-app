@@ -147,7 +147,7 @@ h1 {
 
 /* FORM */
 .modal {
-    width: 350px;
+     width: min(350px, 92%);
     height: 350px;
     background-color: white;
     position: fixed;
