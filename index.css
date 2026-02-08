@@ -228,6 +228,12 @@ h1 {
              successGlow 1200ms ease-out 520ms 1;
 }
 
+@media (max-width: 520px) {
+    .message {
+    width: min(250px, 92%);
+}
+}
+
 @keyframes successIn {
   to { transform: translateY(0); opacity: 1; }
 }
